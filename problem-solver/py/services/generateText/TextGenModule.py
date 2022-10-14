@@ -17,14 +17,13 @@ class TextGenModule(ScModule):
             )
 
     def OnInitialize(self, params):
-        print('Initialize Text generation module')        
-        print('text generation Chinese')
+        print('Initialize chinese text generation module')        
         agent = TextGenAgent(self)         
         fa_addr = self.ctx.HelperResolveSystemIdtf("question_generate_text", ScType.NodeConstClass)         
         agent.Register(fa_addr, ScPythonEventType.AddOutputEdge) 
 
     def OnShutdown(self):        
-        print('Shutting down Text generation module')  
+        print('Shutting down text generation module')  
 
 
 service = TextGenModule()

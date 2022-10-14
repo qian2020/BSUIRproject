@@ -23,7 +23,7 @@ ui_menu_content_select => ui_nrel_command_template:
         (*
             _-> ui_arg_1;;
         *);;
-        .._question_content_select_instance _<- question;;
+        .._question_processing_text_instance _<- question;;
     *];;
 
 ui_menu_form_sc_structure => ui_nrel_command_lang_template: [for $ui_arg_1 form the sc-structure] (* <- lang_en;; *);;

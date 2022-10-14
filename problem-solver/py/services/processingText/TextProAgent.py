@@ -8,7 +8,7 @@ class TextProAgent(ScAgent):
 
 
     def RunImpl(self, evt: ScEventParams) -> ScResult: 
-        print("sucessfuly generation natural language text")
+        print("sucessfuly init chinese text processing")
         # param = ""         
         src, questionNode = self.module.ctx.GetEdgeInfo(evt.edge_addr)         
         #answer = self.module.ctx.CreateNode(ScType.NodeConstStruct)         

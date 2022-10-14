@@ -26,5 +26,5 @@ class TextProModule(ScModule):
         print('Shutting down Text processing module')  
 
 
-service = TextGenModule()
+service = TextProModule()
 service.Run()
