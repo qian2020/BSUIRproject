@@ -1,0 +1,49 @@
+knowledge_base_about_Chinese_language_processing
+=> nrel_main_idtf:
+	[База знаний по обработке китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[knowledge base about Chinese language processing]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- sc_model_of_knowledge_base;
+
+<= nrel_section_decomposition:
+	{
+        section_subject_domain_of_lexical_analysis_of_chinese_language
+		(*
+		=> nrel_section_base_order: 
+			section_subject_domain_of_syntactic_analysis_of_chinese_language;;
+		*);	
+		section_subject_domain_of_syntactic_analysis_of_chinese_language
+		(*
+		=> nrel_section_base_order: 
+			section_subject_domain_of_semantic_analysis_of_chinese_language;;
+		*);	
+		section_subject_domain_of_semantic_analysis_of_chinese_language		
+	};;
+
+section_subject_domain_of_lexical_analysis_of_chinese_language
+=> nrel_main_idtf:
+	[Раздел. Предметная область лексического анализа китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[section subject domain of lexical analysis of chinese language]
+	(* <- lang_en;; *);;
+
+section_subject_domain_of_syntactic_analysis_of_chinese_language
+=> nrel_main_idtf:
+	[Раздел. Предметная область синтаксического анализа китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[section subject domain of syntactic analysis of chinese language]
+	(* <- lang_en;; *);;
+
+section_subject_domain_of_semantic_analysis_of_chinese_language
+=> nrel_main_idtf:
+	[Раздел. Предметная область семантического анализа китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[section subject domain of semantic analysis of chinese language]
+	(* <- lang_en;; *);;

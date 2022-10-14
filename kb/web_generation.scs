@@ -1,0 +1,40 @@
+sentence_in_chinese
+<- sc_node_class;;
+
+sentence_in_chinese
+=> nrel_main_idtf:
+    [sentence in Chinese]
+    (* <- lang_en;; *);
+    [предложение китайского языка]
+    (* <- lang_ru;; *);;
+
+example_sentence
+=> nrel_main_idtf:
+    [example sentence]
+    (* <- lang_en;; *);
+    [пример предложения]
+    (* <- lang_ru;; *);;
+
+example_sentence
+<- sentence_in_chinese;;
+
+example_sentence
+<= nrel_sc_text_translation:
+   ..a (*<- sc_node_tuple ;;*);;
+
+..a
+-> rrel_example: [中华人民共和国](* <- lang_ch;; *);;
+
+example_sc_structure
+=
+[*
+    qianlw -> rrel_example: bsuStudent;;
+*];;
+
+example_sc_structure
+<- sc_node_struct;
+=> nrel_main_idtf:
+    [example sc-structure]
+    (* <- lang_en;; *);
+    [пример sc-структуры]
+    (* <- lang_ru;; *);;

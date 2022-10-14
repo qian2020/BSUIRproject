@@ -1,0 +1,31 @@
+concept_sentence
+<- sc_node_class;
+=>nrel_main_idtf:
+	[предложение]
+	(*<- lang_ru;;*);
+=>nrel_main_idtf:
+	[sentence]
+	(*<- lang_en;;*);
+<= nrel_subdividing:
+	{
+		concept_simple_sentence;
+		concept_complex_sentence
+
+	};;
+
+concept_simple_sentence
+<- sc_node_class;
+=>nrel_main_idtf:
+	[простое предложение]
+	(*<- lang_ru;;*);
+=>nrel_main_idtf:
+	[simple sentence]
+	(*<- lang_en;;*);;
+concept_complex_sentence
+<- sc_node_class;
+=>nrel_main_idtf:
+	[сложное предложение]
+	(*<- lang_ru;;*);
+=>nrel_main_idtf:
+	[complex sentence]
+	(*<- lang_en;;*);;

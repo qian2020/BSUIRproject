@@ -1,0 +1,131 @@
+subject_domain_of_chinese_language_text
+=> nrel_main_idtf:
+	[предметная область текстов китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of Chinese language text]
+	(* <- lang_en;; *);;
+
+subject_domain_of_chinese_language_text <- sc_node_struct;;
+subject_domain_of_chinese_language_text <- subject_domain;;
+
+subject_domain_of_chinese_language_text => nrel_private_subject_domain: subject_domain_of_chinese_language_sentence;;
+subject_domain_of_chinese_language_text => nrel_private_subject_domain: subject_domain_of_chinese_language_phrase;;
+subject_domain_of_chinese_language_text => nrel_private_subject_domain: subject_domain_of_chinese_language_segmentation_unit;;
+
+subject_domain_of_chinese_language_text => nrel_private_subject_domain: subject_domain_of_chinese_language_abbreviation;;
+subject_domain_of_chinese_language_text => nrel_private_subject_domain: subject_domain_of_chinese_language_idiom;;
+subject_domain_of_chinese_language_text => nrel_private_subject_domain: subject_domain_of_chinese_language_syntax;;
+subject_domain_of_chinese_language_text => nrel_private_subject_domain: subject_domain_of_chinese_language_semantics;;
+
+subject_domain_of_chinese_language_syntax => nrel_private_subject_domain: subject_domain_of_syntax_of_chinese_language_sentence;;
+subject_domain_of_chinese_language_syntax => nrel_private_subject_domain: subject_domain_of_syntax_of_chinese_language_phrase;;
+subject_domain_of_chinese_language_syntax => nrel_private_subject_domain: subject_domain_of_syntax_of_chinese_language_segmentation_unit;;
+
+subject_domain_of_chinese_language_semantics => nrel_private_subject_domain: subject_domain_of_semantics_of_chinese_language_sentence;;
+subject_domain_of_chinese_language_semantics => nrel_private_subject_domain: subject_domain_of_semantics_of_chinese_language_phrase;;
+subject_domain_of_chinese_language_semantics => nrel_private_subject_domain: subject_domain_of_semantics_of_chinese_language_segmentation_unit;;
+
+subject_domain_of_chinese_language_sentence
+=> nrel_main_idtf:
+	[предметная область предложений китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of chinese language sentence]
+	(* <- lang_en;; *);;
+
+subject_domain_of_chinese_language_phrase
+=> nrel_main_idtf:
+	[предметная область словосочетаний китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of chinese language phrase]
+	(* <- lang_en;; *);;
+
+subject_domain_of_chinese_language_segmentation_unit
+=> nrel_main_idtf:
+	[предметная область единиц сегментации китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of chinese language segmentation unit]
+	(* <- lang_en;; *);;
+
+subject_domain_of_chinese_language_abbreviation
+=> nrel_main_idtf:
+	[предметная область сокращений китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of chinese language abbreviation]
+	(* <- lang_en;; *);;
+
+subject_domain_of_chinese_language_idiom
+=> nrel_main_idtf:
+	[предметная область идиомов китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of chinese language idiom]
+	(* <- lang_en;; *);;
+
+subject_domain_of_chinese_language_syntax
+=> nrel_main_idtf:
+	[предметная область синтаксиса китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of chinese language syntax]
+	(* <- lang_en;; *);;
+
+subject_domain_of_chinese_language_semantics
+=> nrel_main_idtf:
+	[предметная область семантики китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of chinese language semantics]
+	(* <- lang_en;; *);;
+
+subject_domain_of_syntax_of_chinese_language_sentence
+=> nrel_main_idtf:
+	[предметная область синтаксиса предложений китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of syntax of chinese language sentence]
+	(* <- lang_en;; *);;
+
+subject_domain_of_syntax_of_chinese_language_phrase
+=> nrel_main_idtf:
+	[предметная область синтаксиса словосочетаний китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of syntax of chinese language phrase]
+	(* <- lang_en;; *);;
+
+subject_domain_of_syntax_of_chinese_language_segmentation_unit
+=> nrel_main_idtf:
+	[предметная область синтаксиса единиц сегментации китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of syntax of chinese language segmentation unit]
+	(* <- lang_en;; *);;
+
+subject_domain_of_semantics_of_chinese_language_sentence
+=> nrel_main_idtf:
+	[предметная область семантики предложений китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of semantics of chinese language sentence]
+	(* <- lang_en;; *);;
+
+subject_domain_of_semantics_of_chinese_language_phrase
+=> nrel_main_idtf:
+	[предметная область семантики словосочетаний китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of semantics of chinese language phrase]
+	(* <- lang_en;; *);;
+
+subject_domain_of_semantics_of_chinese_language_segmentation_unit
+=> nrel_main_idtf:
+	[предметная область семантики единиц сегментации китайского языка]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[subject domain of semantics of chinese language segmentation unit]
+	(* <- lang_en;; *);;

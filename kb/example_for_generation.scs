@@ -1,0 +1,190 @@
+//使系统能够添加中文标识符
+lang_ch
+<- sc_node_class;
+<- languages;;
+
+lang_ch
+=> nrel_main_idtf:
+    [Chinese language]
+    (* <- lang_en;; *);
+    [Китайский язык]
+    (* <- lang_ru;; *);;
+
+//测试用的
+I_ch_chinese
+=> nrel_main_idtf: [中文] (*<- lang_ch;;*);
+=> nrel_idtf: [中文] (*<- lang_ch;;*);;
+
+Chinese_language_lexeme
+<- sc_node_class;;
+
+
+nrel_lexeme_for_Chinese_language
+<- sc_node_norole_relation;;
+rubber_ball
+<- toy;
+=> nrel_lexeme_for_Chinese_language: I_ch_rubber_ball;;
+toy
+<- sc_node_class;
+=> nrel_lexeme_for_Chinese_language: I_ch_toy;;
+
+I_ch_rubber_ball
+=> nrel_main_idtf: [气球] (* <- lang_ch;; *);;
+
+I_ch_toy
+=> nrel_main_idtf: [玩具] (* <- lang_ch;; *);;
+
+I_ch_to_be
+=> nrel_main_idtf: [是] (* <- lang_ch;; *);;
+
+exhibit_7
+=> nrel_lexeme_for_Chinese_language: I_ch_exhibit_7;
+=> nrel_current_location: national_Gallery;
+=> nrel_current_condition: excelent;
+<= nrel_sculptor: Nikolaou;
+<- statue;
+<- red;;
+
+I_ch_exhibit_7
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [七号展品](*<- lang_ch;;*);
+=> nrel_idtf: [第七号展品];;
+
+nrel_lexeme_for_Chinese_language
+<- sc_node_norole_relation;;
+
+nrel_sculptor
+<- sc_node_norole_relation;
+=> nrel_lexeme_for_Chinese_language: I_ch_sculptor;;
+I_ch_sculptor
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [雕刻](*<- lang_ch;;*);;
+
+Nikolaou
+=> nrel_place_of_birth: Athens;
+=> nrel_lexeme_for_Chinese_language: I_ch_Nikolaou;;
+I_ch_Nikolaou
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [尼古拉欧](*<- lang_ch;;*);;
+
+nrel_place_of_birth
+<- sc_node_norole_relation;
+=> nrel_lexeme_for_Chinese_language: I_ch_place_of_birth;;
+I_ch_place_of_birth
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [出生地](*<- lang_ch;;*);;
+
+Athens
+=> nrel_lexeme_for_Chinese_language: I_ch_Athens;;
+I_ch_Athens
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [雅典](*<- lang_ch;;*);;
+
+nrel_current_location
+<- sc_node_norole_relation;
+=> nrel_lexeme_for_Chinese_language: I_ch_current_location;;
+I_ch_current_location
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [当前位于](*<- lang_ch;;*);;
+
+national_Gallery
+=> nrel_lexeme_for_Chinese_language: I_ch_national_Gallery;;
+I_ch_national_Gallery
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [国家画廊](*<- lang_ch;;*);;
+
+nrel_current_condition
+<- sc_node_norole_relation;
+=> nrel_lexeme_for_Chinese_language: I_ch_current_condition;;
+I_ch_current_condition
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [当前状态](*<- lang_ch;;*);;
+
+excelent
+=> nrel_lexeme_for_Chinese_language: I_ch_excelent;;
+I_ch_excelent
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [完美](*<- lang_ch;;*);;
+
+red
+<- sc_node_class;
+=> nrel_lexeme_for_Chinese_language: I_ch_red;;
+I_ch_red
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [红色的](*<- lang_ch;;*);;
+
+statue
+<- sc_node_class;
+=> nrel_lexeme_for_Chinese_language: I_ch_statue;;
+I_ch_statue
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [雕塑](*<- lang_ch;;*);;
+
+
+Nikolaou
+=> nrel_time_of_birth: 1918;
+=> nrel_time_of_death: 1998;;
+
+nrel_time_of_birth
+<- sc_node_norole_relation;
+=> nrel_lexeme_for_Chinese_language: I_ch_time_of_birth;;
+I_ch_time_of_birth
+<- Chinese_language_lexeme;
+=> nrel_main_idtf: [出生时间](*<- lang_ch;;*);;
+
+nrel_time_of_death
+<- sc_node_norole_relation;
+=> nrel_lexeme_for_Chinese_language: I_ch_time_of_death;;
+
+I_ch_time_of_death
+<- Chinese_language_lexeme;
+=> nrel_main_idtf:
+    [死亡时间]
+    (* <- chinese_language;; <- Chinese_language_lexeme;; *);;
+
+ge_struct = [*John
+=> nrel_residence: London;;*];;
+ge_struct -> rrel_target: John;;
+rrel_target
+<- sc_node_role_relation;;
+John
+=> nrel_lexeme_for_Chinese_language: I_ch_John;;
+
+I_ch_John
+<- Chinese_language_lexeme;
+<- person;
+=> nrel_main_idtf: [约翰](* <- lang_ch;; *);;
+nrel_residence
+<- sc_node_norole_relation;
+non_linguistic_relation;
+=> nrel_reification: I_ch_to_live;;
+
+nrel_reification
+<- sc_node_norole_relation;;
+
+London
+=> nrel_lexeme_for_Chinese_language: I_ch_London;;
+
+I_ch_London
+<- Chinese_language_lexeme;
+<- place;
+=> nrel_main_idtf: [伦敦] (* <- lang_ch;; *);;
+
+non_linguistic_relation
+<- sc_node_class;;
+
+pattern = [* .._x _=> nrel_age: .._y;
+                 _<- male;;*];;
+nrel_age <- sc_node_norole_relation;
+<- quasybinary_relation;;
+male <- sc_node_class;;
+
+oneperson => nrel_skill: python (* -> programming;;*);;
+Jack <= nrel_skill: ..set1;;
+..set1 -> Java;;
+..set1 -> python;;
+..set1 <- sc_node_not_binary_tuple;;
+nrel_skill <- sc_node_norole_relation;
+<- quasybinary_relation;;
+//@BCtime = {BC101; BC201};;
+Jack <= nrel_age: {BC101; BC201};;

@@ -1,0 +1,15 @@
+lib_component_ui_menu_generate_text
+=> nrel_main_idtf:
+    [Library component User interfaces command of generate text for sc-structure]
+    (* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;;
+
+lib_component_ui_menu_content_select
+=> nrel_main_idtf:
+    [Library component User interfaces command of content selection]
+    (* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;;
