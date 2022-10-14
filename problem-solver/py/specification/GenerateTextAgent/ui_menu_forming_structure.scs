@@ -1,7 +1,7 @@
-ui_menu_content_select <- ui_user_command_class_atom;
+ui_menu_form_sc_structure <- ui_user_command_class_atom;
 ui_user_command_class_view_kb; ui_one_argument_command_class;;
 
-ui_menu_content_select
+ui_menu_form_sc_structure
 => nrel_main_idtf:
     [Для указанного текста сформировать sc-структуру]
     (* <- lang_ru;; *);
@@ -9,7 +9,7 @@ ui_menu_content_select
     [сформирование sc-структуры для указанного текста]
     (* <- lang_ru;; *);;
 
-ui_menu_content_select
+ui_menu_form_sc_structure
 => nrel_main_idtf:
     [For given text form the sc-structure]
     (* <- lang_en;; *);
@@ -19,12 +19,12 @@ ui_menu_content_select
 
 ui_menu_content_select => ui_nrel_command_template:
     [*
-        question_content_select _-> ._question_content_select_instance
+        question_processing_text _-> ._question_processing_text_instance
         (*
             _-> ui_arg_1;;
         *);;
         .._question_content_select_instance _<- question;;
     *];;
 
-ui_menu_content_select => ui_nrel_command_lang_template: [for $ui_arg_1 form the sc-structure] (* <- lang_en;; *);;
-ui_menu_content_select => ui_nrel_command_lang_template: [для $ui_arg_1 form the sc-structure] (* <- lang_ru;; *);;
+ui_menu_form_sc_structure => ui_nrel_command_lang_template: [for $ui_arg_1 form the sc-structure] (* <- lang_en;; *);;
+ui_menu_form_sc_structure => ui_nrel_command_lang_template: [для $ui_arg_1 form the sc-structure] (* <- lang_ru;; *);;
